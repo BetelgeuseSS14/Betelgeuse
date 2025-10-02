@@ -287,6 +287,9 @@
   - YellowTurtleneckDress
   - OldYellowDress
   # End DeltaV additions
+  - PassengerSweatpantsBlack # Betelgeuse
+  - PassengerSweatpantsDarkGrey # Betelgeuse
+  - PassengerSweatpantsLightGrey # Betelgeuse 
   - AncientJumpsuit
   - RainbowJumpsuit
   - RainbowJumpskirt
@@ -838,6 +841,9 @@
   - ClothingUniformJumpsuitCargoTechPants # DeltaV
   - ClothingUniformJumpsuitCargoTechOveralls # DeltaV
   - ClothingUniformJumpskirtCargoTechRomper # DeltaV
+  - CargoSweatpantsBlack # Betelgeuse
+  - CargoSweatpantsDarkGrey # Betelgeuse
+  - CargoSweatpantsLightGrey # Betelgeuse
   - CargoTechnicianJumpsuit
   - CargoTechnicianJumpskirt
 

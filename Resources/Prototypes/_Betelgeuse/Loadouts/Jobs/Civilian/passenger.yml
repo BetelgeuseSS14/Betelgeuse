@@ -1,0 +1,18 @@
+# Jumpsuit
+- type: loadout
+  id: PassengerSweatpantsBlack
+  equipment:
+    jumpsuit: ClothingUniformSweatpantsBlack
+  groupBy: "sweatpants"
+
+- type: loadout
+  id: PassengerSweatpantsDarkGrey
+  equipment:
+    jumpsuit: ClothingUniformSweatpantsDarkGrey
+  groupBy: "sweatpants"
+
+- type: loadout
+  id: PassengerSweatpantsLightGrey
+  equipment:
+    jumpsuit: ClothingUniformSweatpantsLightGrey
+  groupBy: "sweatpants"
