@@ -1,0 +1,32 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSweatpantsBlack
+  name: black sweatpants
+  description: Comfy activewear pants with an elastic waist.
+  components:
+  - type: Sprite
+    sprite: _Betelgeuse/Clothing/Uniforms/Pants/black_sweatpants.rsi
+  - type: Clothing
+    sprite: _Betelgeuse/Clothing/Uniforms/Pants/black_sweatpants.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSweatpantsDarkGrey
+  name: dark grey sweatpants
+  description: Comfy activewear pants with an elastic waist.
+  components:
+  - type: Sprite
+    sprite: _Betelgeuse/Clothing/Uniforms/Pants/dgrey_sweatpants.rsi
+  - type: Clothing
+    sprite: _Betelgeuse/Clothing/Uniforms/Pants/dgrey_sweatpants.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSweatpantsLightGrey
+  name: light grey sweatpants
+  description: Comfy activewear pants with an elastic waist.
+  components:
+  - type: Sprite
+    sprite: _Betelgeuse/Clothing/Uniforms/Pants/lgrey_sweatpants.rsi
+  - type: Clothing
+    sprite: _Betelgeuse/Clothing/Uniforms/Pants/lgrey_sweatpants.rsi

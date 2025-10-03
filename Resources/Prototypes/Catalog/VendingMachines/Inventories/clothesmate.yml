@@ -135,6 +135,11 @@
     ClothingShoesLeather: 2
     ClothingShoesBootsLaceup: 2
     # End DeltaV additions
+    # Begin Betelgeuse additions
+    ClothingUniformSweatpantsBlack: 2
+    ClothingUniformSweatpantsDarkGrey: 2
+    ClothingUniformSweatpantsLightGrey: 2
+    # End Betelgeuse additions
   contrabandInventory:
     ClothingMaskNeckGaiter: 2
     ClothingUniformJumpsuitTacticool: 1
