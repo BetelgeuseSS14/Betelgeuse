@@ -1,70 +1,4 @@
 ﻿Entries:
-- author: Avalon-Proto
-  changes:
-  - message: Heads of Security rejoice, your equipment has been re-tuned. The X-01
-      now has been streamlined and can fire twice as many shots before needing a charge
-    type: Tweak
-  id: 1189
-  time: '2025-03-20T15:44:55.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/3246
-- author: Stop-Signs
-  changes:
-  - message: Shuttle FTL cooldown has been raised to 2 minutes.
-    type: Tweak
-  id: 1190
-  time: '2025-03-21T00:12:41.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/3283
-- author: Stop-Signs
-  changes:
-  - message: Battery weapons have been modified for better ergonomics.
-    type: Tweak
-  id: 1191
-  time: '2025-03-21T22:41:11.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/3284
-- author: deltanedas
-  changes:
-  - message: Fixed Synthesis Specialists not being listed as Free Agent in the character
-      menu.
-    type: Fix
-  id: 1192
-  time: '2025-03-22T21:50:06.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/3291
-- author: KashRas2
-  changes:
-  - message: Autodoc Russian phrases has become more Russian, than pseudo Russian.
-    type: Tweak
-  id: 1193
-  time: '2025-03-23T12:20:13.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/3298
-- author: deltanedas
-  changes:
-  - message: Changed the Cloning research to be in Biochemical.
-    type: Tweak
-  id: 1194
-  time: '2025-03-23T14:17:22.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/3303
-- author: foxcurl
-  changes:
-  - message: Security cyborg modules have been moved to the secfab.
-    type: Tweak
-  id: 1195
-  time: '2025-03-23T19:50:15.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/3306
-- author: Radezolid
-  changes:
-  - message: The cooldown between FTL travels has been reduced by 30 seconds and the
-      range which you can FTL to has been doubled.
-    type: Tweak
-  id: 1196
-  time: '2025-03-24T00:21:26.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/3293
-- author: sowelipililimute
-  changes:
-  - message: The character height slider is now visible in the profile editor
-    type: Tweak
-  id: 1197
-  time: '2025-03-24T20:52:04.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/3304
 - author: deltanedas
   changes:
   - message: Merged mid-march changes from upstream.
@@ -4173,3 +4107,71 @@
   id: 1688
   time: '2025-10-02T18:58:45.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/4364
+- author: CrimsonAnnie
+  changes:
+  - message: Fixed one of Psionic eruption's flavour pop-ups
+    type: Fix
+  id: 1689
+  time: '2025-10-02T21:57:58.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/4444
+- author: Vapetastic-Gaming
+  changes:
+  - message: Apoapsis Hits 100 pop
+    type: Tweak
+  id: 1690
+  time: '2025-10-02T22:11:12.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/4472
+- author: kotobdev
+  changes:
+  - message: Avali have been ported - a species of feathery space raptors, who have
+      excellent eyesight and thrive in the cold! Read more about them in the guidebook.
+    type: Add
+  id: 1691
+  time: '2025-10-02T22:12:20.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/4275
+- author: Lonestar827
+  changes:
+  - message: changed the Science guidebook tab to Epistemics to avoid confusion
+    type: Fix
+  id: 1692
+  time: '2025-10-02T22:21:15.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/4468
+- author: SirWarock
+  changes:
+  - message: Fixed Shotgun ammo counter not updating when reloading!
+    type: Fix
+  id: 1693
+  time: '2025-10-02T23:51:14.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/4464
+- author: WidgetBeck, FaelingDraws, TheGrimbeeper
+  changes:
+  - message: Anomalites from Impstation are making their appearance in the delta sector.
+      Hold on to their cores if you want to keep a hold on the anomaly sprites.
+    type: Add
+  id: 1694
+  time: '2025-10-03T00:17:21.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/4375
+- author: SirWarock
+  changes:
+  - message: Reduced the sprinting speed of all Webvests by 10%!
+    type: Tweak
+  - message: Reduced the TC price of the Elite Webvest. 5 TC -> 3 TC.
+    type: Tweak
+  id: 1695
+  time: '2025-10-03T00:18:16.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/4404
+- author: Minerva
+  changes:
+  - message: People with the Numb trait no longer scream during surgery. Anesthesia
+      is still largely required.
+    type: Fix
+  id: 1696
+  time: '2025-10-03T00:33:48.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/4329
+- author: SirWarock
+  changes:
+  - message: Fixed Lotophago Oil sometimes making you permanently slurring your words!
+    type: Fix
+  id: 1697
+  time: '2025-10-03T02:33:31.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/4318
