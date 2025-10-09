@@ -35,26 +35,30 @@
   - Janitor
   - Theatre
   - Kitchen
-  #- Chapel # DeltaV - Chapel is in Epistemics
+  - Clerk
+  - Chapel # DeltaV - Chapel is in Epistemics
   - Hydroponics
   - External
   - Cryogenics
-  # I mean they'll give themselves the rest of the access levels *anyways*.
-  # As of 15/03/23 they can't do that so here's MOST of the rest of the access levels.
-  # Head level access that isn't their own was deliberately left out, get AA from the captain instead.
-  # Begin DeltaV Removals - fuck all of this HoP is a service role
-  #- Chemistry
-  #- Engineering
-  #- Research
-  #- Detective
-  #- Salvage
-  #- Security # NoooOoOo!! My HoPcurity!1
-  #- Brig
-  #- Lawyer # Lawyer is now part of the justice dept
-  #- Cargo
-  #- Atmospherics
-  #- Medical
-  # End DeltaV Removals
+  - Chemistry
+  - Engineering
+  - Research
+  - Mantis
+  - Robotics
+  - Detective
+  - Salvage
+  - Mail
+  - Security
+  - Corpsman
+  - Brig
+  # Lawyer # we're removing law and replacing it with IA, don't make anyone a lawyer
+  - Cargo
+  - Orders
+  - Atmospherics
+  - Medical
+  - Paramedic
+  - Psychologist
+  - Surgery
   # Begin DeltaV Additions - fine-grained service accesses
   - Boxer
   - Clown
