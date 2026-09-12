@@ -18,11 +18,8 @@
   - Security
   #- Brig # DeltaV - Removed brig access
   - Maintenance
-  #- Service # DeltaV - Sec isn't service
   - External
   #- Cryogenics # DeltaV - No looting cryo for cadets
-  - GenpopEnter
-  - GenpopLeave
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -31,6 +28,7 @@
   id: SecurityCadetGear
   equipment:
     shoes: ClothingShoesBootsJackFilled
+    neck: ClothingNeckNoviceMark # imp
     outerClothing: ClothingOuterArmorDuraVest # DeltaV - ClothingOuterArmorBasic replaced in favour of stab vest. Sucks to suck, cadets
     id: SecurityCadetPDA
     ears: ClothingHeadsetSecurity

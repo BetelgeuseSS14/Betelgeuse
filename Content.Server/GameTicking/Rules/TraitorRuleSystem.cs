@@ -18,6 +18,7 @@ using Robust.Shared.Random;
 using System.Linq;
 using System.Text;
 using Content.Server.Codewords;
+using Content.Shared._DV.Tips;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -26,7 +27,7 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
     private static readonly Color TraitorCodewordColor = Color.FromHex("#cc3b3b");
 
     [Dependency] private readonly AntagSelectionSystem _antag = default!;
-    [Dependency] private readonly SharedJobSystem _jobs = default!;
+    // [Dependency] private readonly SharedJobSystem _jobs = default!; // DV - not used
     [Dependency] private readonly MindSystem _mindSystem = default!;
     [Dependency] private readonly NpcFactionSystem _npcFaction = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
@@ -35,6 +36,7 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
     [Dependency] private readonly SharedRoleSystem _roleSystem = default!;
     [Dependency] private readonly UplinkSystem _uplink = default!;
     [Dependency] private readonly CodewordSystem _codewordSystem = default!;
+    [Dependency] private readonly SharedTipSystem _tips = default!; // DeltaV - Tips
 
     public override void Initialize()
     {
@@ -143,6 +145,7 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
         _npcFaction.AddFaction(traitor, component.SyndicateFaction);
 
         Log.Debug($"MakeTraitor {ToPrettyString(traitor)} - Finished");
+        _tips.ShowTip(traitor, new ProtoId<TipPrototype>("TraitorTip")); // DeltaV - Tips
         return true;
     }
 

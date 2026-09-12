@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Numerics;
+using Content.Shared._DV.Administration.EntitySystems; // DeltaV - Unorbitable
 using Content.Shared.Administration.Managers;
 using Content.Shared.Database;
 using Content.Shared.Follower.Components;
@@ -33,8 +34,10 @@ public sealed class FollowerSystem : EntitySystem
     [Dependency] private readonly SharedPhysicsSystem _physicsSystem = default!;
     [Dependency] private readonly INetManager _netMan = default!;
     [Dependency] private readonly ISharedAdminManager _adminManager = default!;
+    [Dependency] private readonly UnorbitableSystem _unorbitable = default!; // DeltaV - Unorbitable
 
     private static readonly ProtoId<TagPrototype> ForceableFollowTag = "ForceableFollow";
+    private static readonly ProtoId<TagPrototype> PreventGhostnadoWarpTag = "NotGhostnadoWarpable";
 
     public override void Initialize()
     {
@@ -96,6 +99,11 @@ public sealed class FollowerSystem : EntitySystem
     {
         if (ev.User == ev.Target || IsClientSide(ev.Target))
             return;
+
+        // DeltaV - Unorbitable START
+        if (!_unorbitable.CanFollow(ev.User, ev.Target))
+            return;
+        // DeltaV END
 
         if (HasComp<GhostComponent>(ev.User))
         {
@@ -185,6 +193,11 @@ public sealed class FollowerSystem : EntitySystem
     {
         if (follower == entity || TerminatingOrDeleted(entity))
             return;
+
+        // DeltaV - Unorbitable START
+        if (!_unorbitable.CanFollow(follower, entity))
+            return;
+        // DeltaV END
 
         // No recursion for you
         var targetXform = Transform(entity);
@@ -320,11 +333,17 @@ public sealed class FollowerSystem : EntitySystem
         var query = EntityQueryEnumerator<FollowerComponent, GhostComponent, ActorComponent>();
         while (query.MoveNext(out _, out var follower, out _, out var actor))
         {
-            // Exclude admins
+            // Don't count admin followers so that players cannot notice if admins are in stealth mode and following someone.
             if (_adminManager.IsAdmin(actor.PlayerSession))
                 continue;
 
             var followed = follower.Following;
+
+            // If the followed entity cannot be ghostnado'd to, we don't count it.
+            // Used for making admins not warpable to, but IsAdmin isn't used for cases where the admin wants to be followed, for example during events.
+            if (_tagSystem.HasTag(followed, PreventGhostnadoWarpTag))
+                continue;
+
             // Add new entry or increment existing
             followedEnts.TryGetValue(followed, out var currentValue);
             followedEnts[followed] = currentValue + 1;

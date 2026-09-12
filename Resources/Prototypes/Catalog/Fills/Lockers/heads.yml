@@ -13,7 +13,7 @@
     - id: ClothingHeadsetAltCargo
     - id: DoorRemoteCargo
     - id: AstroNavCartridge
-    #- id: ClothingHandsKnuckleDustersQM # DeltaV - No weaponry for LO.
+    - id: ClothingHandsKnuckleDustersQM
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -49,7 +49,7 @@
     - id: SpaceCash1000
     - id: WeaponDisabler
     - id: ClothingEyesGlassesCommand
-    - id: HeadSkeleton # A skull to accompany your skeleton crew
+    - id: OrganSkeletonPersonHead # A skull to accompany your skeleton crew
       conditions:
       - !type:PlayerCountCondition
         max: 15
@@ -116,10 +116,12 @@
     children:
     - !type:NestedSelector # DeltaV
       tableId: LockerFillHeadOfPersonnelDeltaV
-    #- id: AccessConfigurator # DeltaV - Moved to PTech
-    #- id: BoxEncryptionKeyPassenger # DeltaV - PTech
-    #- id: BoxEncryptionKeyService # DeltaV - PTech
-    #- id: BoxHeadset # DeltaV - PTech
+    # Begin DeltaV modifications - Moved to PTech
+    #- id: AccessConfigurator
+    #- id: BoxEncryptionKeyPassenger
+    #- id: BoxEncryptionKeyService
+    #- id: BoxHeadset
+    # End DeltaV modifications
     - id: BoxHoPCircuitboards
     - id: BoxHoPStamps
     #- id: BoxID # DeltaV - PTech
@@ -130,7 +132,7 @@
       # Yes they do fuck you.
     - id: ClothingBackpackIan
       prob: 0.5
-    - id: ClothingHeadsetAltService # DeltaV - HoP is now a service role, replaces their all channels headset.
+    #- id: ClothingHeadsetCommand # DeltaV - HOP is head of service.
     - id: ClothingNeckGoldmedal
     - id: DoorRemoteService
     - id: HoPIDCard
@@ -159,16 +161,15 @@
     - id: CigarCase
       prob: 0.15
     - id: ClothingBeltChiefEngineerFilled
-    - id: ClothingEyesGlassesMeson
+    #- id: ClothingEyesGlassesMeson # DeltaV- Replaced normal meson goggles
     #- id: ClothingHandsGlovesColorYellow # DeltaV - Moved to dresser
     - id: ClothingHeadsetAltEngineering
     - id: DoorRemoteEngineering
     - id: BoxCECircuitboards
-    - id: RCDRecharging # DeltaV - Replaces normal RCD
+    #- id: RCD # DeltaV - Replaced normal RCD
     - id: RCDAmmo
     - id: RubberStampCE
     - id: MetalFoamGrenade
-    - id: AirGrenade # DeltaV
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -216,10 +217,8 @@
       tableId: LockerFillChiefMedicalOfficerDeltaV
     - id: BoxEncryptionKeyMedical
     - id: ClothingBackpackDuffelSurgeryFilled
-    #- id: ClothingCloakCmo # DeltaV - Moved to dresser
     - id: ClothingEyesHudMedical
     #- id: ClothingHandsGlovesNitrile # DeltaV - Moved to dresser
-    #- id: ClothingHeadHatBeretCmo # DeltaV - Moved to dresser
     - id: ClothingHeadsetAltMedical
     #- id: ClothingMaskSterile # DeltaV - Moved to ClothingBackpackDuffelSurgeryFilled
     - id: DoorRemoteMedical
@@ -280,7 +279,6 @@
     - id: DoorRemoteResearch
     - id: HandTeleporter
     - id: RubberStampRd
-    - id: BibleMystagogue  # DeltaV - steal objective and source of abilities
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -324,8 +322,8 @@
     children:
     - !type:NestedSelector # DeltaV
       tableId: LockerFillHeadOfSecurityDeltaV
-    - id: BookSecretDocuments
-    #- id: WeaponEnergyMagnum # DeltaV - PDX instead
+    #- id: BookSecretDocuments # DeltaV - Made into NT medical documents
+    #- id: WeaponEnergyMagnum # DeltaV - Replaced with the HoSBriefcase
     #- id: BookSpaceLaw # DeltaV - Moved to dresser
     - id: BoxEncryptionKeySecurity
     #- id: CigarGoldCase # DeltaV - Moved to dresser
@@ -333,7 +331,6 @@
     - id: ClothingBeltSecurityFilled
     - id: ClothingEyesGlassesSecurity
     - id: ClothingHeadsetAltSecurity
-    #- id: ClothingMaskNeckGaiter # DeltaV - Moved to dresser
     #- id: ClothingOuterCoatHoSTrench # DeltaV - Moved to dresser
     #- id: ClothingShoesBootsJack # DeltaV - Moved to dresser
     - id: FlashlightSeclite

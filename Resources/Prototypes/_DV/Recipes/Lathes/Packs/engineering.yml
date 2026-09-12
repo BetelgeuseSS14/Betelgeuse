@@ -3,7 +3,11 @@
 - type: latheRecipePack
   id: EngineeringStaticDeltaV
   recipes:
-  - HoloprojectorEngineering
+  - HolotapeProjector
+  - SheetPlasteel1Engineering
+  - ConstructionBag
+  - NaniteApplicator
+  - AccessConfigurator
 
 ## Dynamic
 
@@ -37,3 +41,9 @@
   - ClothingOuterHardsuitAtmos
   - ClothingOuterSuitAtmosFire
   - ClothingHeadHelmetAtmosFire
+  - ClothingOuterVoidsuitEngineering
+
+- type: latheRecipePack
+  id: AdvancedConstruction
+  recipes:
+  - ConstructionBagOfHolding

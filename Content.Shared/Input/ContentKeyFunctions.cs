@@ -68,22 +68,10 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction TakeScreenshotNoUI = "TakeScreenshotNoUI";
         public static readonly BoundKeyFunction ToggleFullscreen = "ToggleFullscreen";
         public static readonly BoundKeyFunction Point = "Point";
+        public static readonly BoundKeyFunction OfferItem = "OfferItem"; // Floofstation
         public static readonly BoundKeyFunction ZoomOut = "ZoomOut";
         public static readonly BoundKeyFunction ZoomIn = "ZoomIn";
         public static readonly BoundKeyFunction ResetZoom = "ResetZoom";
-
-        // Shitmed Change Start
-        public static readonly BoundKeyFunction TargetHead = "TargetHead";
-        public static readonly BoundKeyFunction TargetTorso = "TargetTorso";
-        public static readonly BoundKeyFunction TargetLeftArm = "TargetLeftArm";
-        public static readonly BoundKeyFunction TargetLeftHand = "TargetLeftHand";
-        public static readonly BoundKeyFunction TargetRightArm = "TargetRightArm";
-        public static readonly BoundKeyFunction TargetRightHand = "TargetRightHand";
-        public static readonly BoundKeyFunction TargetLeftLeg = "TargetLeftLeg";
-        public static readonly BoundKeyFunction TargetLeftFoot = "TargetLeftFoot";
-        public static readonly BoundKeyFunction TargetRightLeg = "TargetRightLeg";
-        public static readonly BoundKeyFunction TargetRightFoot = "TargetRightFoot";
-        // Shitmed Change End
 
         public static readonly BoundKeyFunction ArcadeUp = "ArcadeUp";
         public static readonly BoundKeyFunction ArcadeDown = "ArcadeDown";
@@ -143,7 +131,8 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction EditorCopyObject = "EditorCopyObject";
         public static readonly BoundKeyFunction EditorFlipObject = "EditorFlipObject";
         public static readonly BoundKeyFunction InspectEntity = "InspectEntity";
-
+        public static readonly BoundKeyFunction InspectServerComponent = "InspectServerComponent";
+        public static readonly BoundKeyFunction InspectClientComponent = "InspectClientComponent";
         public static readonly BoundKeyFunction MappingUnselect = "MappingUnselect";
         public static readonly BoundKeyFunction SaveMap = "SaveMap";
         public static readonly BoundKeyFunction MappingEnablePick = "MappingEnablePick";

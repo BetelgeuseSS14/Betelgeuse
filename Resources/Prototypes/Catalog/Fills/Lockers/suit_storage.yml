@@ -186,7 +186,6 @@
     - id: OxygenTankFilled
     - id: NitrogenTankFilled
     - id: ClothingOuterHardsuitSecurity
-    - id: ClothingShoesBootsSecurityMagboots # DeltaV - Added security magboots.
     - id: ClothingMaskBreath
 
 #CE's hardsuit
@@ -245,7 +244,7 @@
 - type: entity
   id: SuitStorageWarden
   parent: SuitStorageBase
-  suffix: Warden
+  suffix: Warden, Security # DeltaV - Added security.
   components:
   - type: EntityTableContainerFill
     containers:
